@@ -1,27 +1,33 @@
 MechResearch Global — QA status (2026-11-08)
 
-VERIFIED
+IMPLEMENTED IN REPOSITORY
+- Expo React Native mobile entry screen added at mobile/App.tsx.
+- Papers search, paper details/links, session-only saved papers.
+- Researcher search and author profile lookup.
+- University/institution search via OpenAlex.
+- Four-tab navigation and responsive card-based interface.
+- Removed broken references to icon files that are not present in the repository.
+- GitHub Actions quality workflow added for backend tests, TypeScript and Expo Doctor.
+
+PREVIOUSLY VERIFIED
 - Backend Python syntax compilation passed.
 - FastAPI pytest suite: 2 passed.
 - Earlier local health endpoint smoke test returned HTTP 200.
 - Earlier mocked smoke tests covered paper search, author search, author profile and OpenAlex university search.
-- package.json, app.json and eas.json are valid JSON.
-- Mobile code syntax/transpilation was checked in the earlier working session.
-- Expo SDK / Android target configuration, APK/AAB EAS profiles, app icon, Dockerfile and Render blueprint are present.
+- package.json, app.json and eas.json were validated as JSON in the prior working session.
 
-NOT VERIFIED / BLOCKED
-- npm install timed out while reaching the dependency registry.
-- Expo Doctor and full TypeScript typecheck not completed.
-- Android native build and signed APK/AAB not created; no EAS authenticated session.
-- Public backend not deployed; no hosting authorization or live URL.
-- Physical Android installation test not performed.
-- Live third-party API integration not verified in this environment.
+PENDING VERIFICATION
+- GitHub Actions run for the newly added mobile app has not yet been confirmed.
+- npm dependency installation and full TypeScript / Expo Doctor checks must pass in CI.
+- Public backend deployment is not complete; no public API URL exists yet.
+- EAS login / project ownership configuration is not complete.
+- Signed Android APK and Google Play AAB have not been generated.
+- Physical Android installation and live third-party API tests are not complete.
 
 PRODUCT LIMITATIONS
-- Labs screen includes illustrative sample records, not a verified live worldwide lab directory.
-- Saved papers are session-only; no account or cloud sync.
+- Saved papers are session-only and are lost when the app restarts.
 - Researcher profiles do not independently verify current professorship, supervisor availability or official contact details.
 - University index results should be verified against official university websites.
-- No user login, push notifications, admin dashboard or supervisor-contact workflow.
+- No login, cloud sync, push notifications, admin dashboard, supervisor-contact workflow or verified live lab directory.
 
-Do not describe this ZIP as an installable APK or a fully production-released app.
+Do not describe this repository as a published production app or claim an APK/AAB is ready until builds and device tests pass.
