@@ -1,0 +1,27 @@
+MechResearch Global — QA status (2026-11-08)
+
+VERIFIED
+- Backend Python syntax compilation passed.
+- FastAPI pytest suite: 2 passed.
+- Earlier local health endpoint smoke test returned HTTP 200.
+- Earlier mocked smoke tests covered paper search, author search, author profile and OpenAlex university search.
+- package.json, app.json and eas.json are valid JSON.
+- Mobile code syntax/transpilation was checked in the earlier working session.
+- Expo SDK / Android target configuration, APK/AAB EAS profiles, app icon, Dockerfile and Render blueprint are present.
+
+NOT VERIFIED / BLOCKED
+- npm install timed out while reaching the dependency registry.
+- Expo Doctor and full TypeScript typecheck not completed.
+- Android native build and signed APK/AAB not created; no EAS authenticated session.
+- Public backend not deployed; no hosting authorization or live URL.
+- Physical Android installation test not performed.
+- Live third-party API integration not verified in this environment.
+
+PRODUCT LIMITATIONS
+- Labs screen includes illustrative sample records, not a verified live worldwide lab directory.
+- Saved papers are session-only; no account or cloud sync.
+- Researcher profiles do not independently verify current professorship, supervisor availability or official contact details.
+- University index results should be verified against official university websites.
+- No user login, push notifications, admin dashboard or supervisor-contact workflow.
+
+Do not describe this ZIP as an installable APK or a fully production-released app.
