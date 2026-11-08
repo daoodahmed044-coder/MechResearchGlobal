@@ -1,0 +1,13 @@
+.env
+*.env
+.venv/
+__pycache__/
+*.py[cod]
+node_modules/
+.expo/
+dist/
+build/
+android/
+ios/
+*.jks
+*.keystore
