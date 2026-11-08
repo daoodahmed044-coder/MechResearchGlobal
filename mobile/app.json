@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "MechResearch Global",
+    "slug": "mechresearch-global",
+    "version": "1.2.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#10243B"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mechresearch.global",
+      "buildNumber": "3"
+    },
+    "android": {
+      "package": "com.mechresearch.global",
+      "versionCode": 3,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#10243B"
+      }
+    },
+    "icon": "./assets/icon.png"
+  }
+}
